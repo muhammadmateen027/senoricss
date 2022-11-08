@@ -14,7 +14,7 @@ __Instructions / Requirements:__
 
 Once you have finished you can push your code and open a pull request.
 
-If you have any question, please contact the Senorics colleague who invited you to the code challange. She/he will happily help you out!
+If you have any question, please contact the Senorics colleague who invited you to the code challenge. She/he will happily help you out!
 
 Good luck! We are looking forward discussing with you this challenge!
 
