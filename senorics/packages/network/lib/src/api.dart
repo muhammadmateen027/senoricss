@@ -13,13 +13,10 @@ enum RequestType {
 ///
 class Api {
   /// Network client required dio as a parameter after initializing
-  const Api({required this.dio, required this.clientId});
+  const Api({required this.dio});
 
   ///
   final Dio dio;
-
-  ///
-  final String clientId;
 
   ///
   Future<NetworkResponse?> apiCall({
