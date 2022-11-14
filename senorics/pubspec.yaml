@@ -8,9 +8,11 @@ environment:
 
 dependencies:
   bloc: ^8.1.0
+  equatable: ^2.0.5
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.1
+  flutter_dotenv: ^5.0.2
   flutter_localizations:
     sdk: flutter
   intl: ^0.17.0
@@ -25,3 +27,5 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   generate: true
+  assets:
+    - .env
