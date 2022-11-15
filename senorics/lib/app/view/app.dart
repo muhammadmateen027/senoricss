@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:senorics/counter/counter.dart';
+import 'package:senorics/api/api.dart';
+import 'package:senorics/github/github.dart';
 import 'package:senorics/l10n/l10n.dart';
 
 class App extends StatelessWidget {
-  const App({super.key});
+  const App({super.key, required this.api});
+
+  final Api api;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +24,10 @@ class App extends StatelessWidget {
         GlobalMaterialLocalizations.delegate,
       ],
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const CounterPage(),
+      home: BlocProvider<GithubBloc>(
+        create: (_) => GithubBloc(api)..add(GithubFetchEvent()),
+        child: const GithubPage(),
+      ),
     );
   }
 }

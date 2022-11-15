@@ -8,6 +8,7 @@ environment:
 
 dependencies:
   bloc: ^8.1.0
+  dio: ^4.0.6
   equatable: ^2.0.5
   flutter:
     sdk: flutter
@@ -16,11 +17,12 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   intl: ^0.17.0
-  network:
-    path: packages/network
+  json_serializable: ^6.5.4
+  rxdart: ^0.27.5
 
 dev_dependencies:
   bloc_test: ^9.1.0
+  build_runner: ^2.0.6
   flutter_test:
     sdk: flutter
   mocktail: ^0.3.0

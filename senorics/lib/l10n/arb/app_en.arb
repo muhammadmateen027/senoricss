@@ -1,7 +1,7 @@
 {
     "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
+    "githubAppBarTitle": "Github",
+    "@githubAppBarTitle": {
+        "description": "Text shown in the AppBar of the Github Page"
     }
 }
